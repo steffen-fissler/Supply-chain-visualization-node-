@@ -1,12 +1,12 @@
-name: first_extension # Will be concatenated with the group_id to an ID
-author: Luka Filipovic, Octavio Mesa-Varona, Lars Valentin, FoodDecide
-env_yml_path: C:/Users/omesa/OneDrive/Escritorio/node/basic/my_conda_env.yml # This is necessary for bundling, but not needed during development
+name: Supply_chain_visualization # Will be concatenated with the group_id to an ID
+author: Luka Filipovic, Octavio Mesa-Varona, Lars Valentin
+env_yml_path: C:/Users/omesa/OneDrive/Escritorio/Supply_chain_visualization_node/env.yml # This is necessary for bundling, but not needed during development
 extension_module: my_extension # The .py Python module containing the nodes of your extension
-description: My First Extension # Human readable bundle name / description
-long_description: This extension is my first Python extension.
-group_id: org.tutorial
+description: supply_chain_visualization # Human readable bundle name / description
+long_description: This extension enables the visualization of supply chains.
+group_id: BfR_UDG.FoodDecide
 version: 0.1.0 # Version of this Python node extension
-vendor: KNIME AG, Zurich, Switzerland
+vendor: BfR (Germany) and UDG (Montenegro)
 license_file: LICENSE.TXT # Best practice: put your LICENSE.TXT next to the knime.yml; otherwise you would need to change to path/to/LICENSE.txt
 channels:
   - knime
@@ -14,3 +14,5 @@ channels:
 dependencies:
   - python=3.9
   - knime-python-base
+
+
