@@ -1,6 +1,6 @@
 name: Supply_chain_visualization # Will be concatenated with the group_id to an ID
 author: Luka Filipovic, Octavio Mesa-Varona, Lars Valentin
-env_yml_path: C:/Users/omesa/OneDrive/Escritorio/Supply_chain_visualization_node/env.yml # This is necessary for bundling, but not needed during development
+env_yml_path: env.yml # This is necessary for bundling, but not needed during development
 extension_module: main # The .py Python module containing the nodes of your extension
 description: supply_chain_visualization # Human readable bundle name / description
 long_description: This extension enables the visualization of supply chains.
@@ -8,11 +8,6 @@ group_id: BfR_UDG.FoodDecide
 version: 0.1.0 # Version of this Python node extension
 vendor: BfR (Germany) and UDG (Montenegro)
 license_file: LICENSE.TXT # Best practice: put your LICENSE.TXT next to the knime.yml; otherwise you would need to change to path/to/LICENSE.txt
-channels:
-  - knime
-  - conda-forge
-dependencies:
-  - python=3.9
-  - knime-python-base
+
 
 
