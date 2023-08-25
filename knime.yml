@@ -1,7 +1,7 @@
 name: Supply_chain_visualization # Will be concatenated with the group_id to an ID
 author: Luka Filipovic, Octavio Mesa-Varona, Lars Valentin
 env_yml_path: C:/Users/omesa/OneDrive/Escritorio/Supply_chain_visualization_node/env.yml # This is necessary for bundling, but not needed during development
-extension_module: my_extension # The .py Python module containing the nodes of your extension
+extension_module: main # The .py Python module containing the nodes of your extension
 description: supply_chain_visualization # Human readable bundle name / description
 long_description: This extension enables the visualization of supply chains.
 group_id: BfR_UDG.FoodDecide
