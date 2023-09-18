@@ -10,23 +10,11 @@ from geopy.geocoders import Nominatim
 LOGGER = logging.getLogger(__name__)
 
 
-#@knext.node(name="Supplychain visualization node", node_type=knext.NodeType.LEARNER, icon_path="icon.png", category="/")
-Supply_chain_visualization_node = knext.node(
-        path="/community/Supply_chain_visualization_node/",
-        node_type=knext.NodeType.LEARNER,
-        level_id="Supply_chain_visualization_node",
-        name="Supplychain visualization node",
-        description="Supply chain visualization node for KNIME",
-        icon="icons/icon.png")
-
-
-@knext.input_table(name="Input Data 1", description="Input data")
-# @knext.input_table(name="Tutorial: Input Data 2", description="We also read data from here") ### Tutorial step 11: Uncomment to create a new input port
-@knext.output_table(name="Output Data", description="Output data")
+category = knext.category("/community", "Supply_chain_visualization_node", "Supplychain visualization node", "Supplychain visualization node for KNIME",icon="icons/icon.png")		
+@knext.node(name="Supplychain visualization node", node_type=knext.NodeType.LEARNER, category=category, icon="icons/icon.png")	
+@knext.input_table(name="Input Data 1",description="Input data")
+@knext.output_table(name="Output Data",  description="Output data")
 @knext.output_view(name="Output view", description="Output view")
-
-
-
 
 class TemplateNode:
     def configure(self, configure_context, input_schema_1):
