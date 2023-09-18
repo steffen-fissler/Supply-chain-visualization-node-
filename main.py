@@ -11,7 +11,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 category = knext.category("/community", "Supply_chain_visualization_node", "Supplychain visualization node", "Supplychain visualization node for KNIME",icon="icons/icon.png")		
-@knext.node(name="Supplychain visualization node", node_type=knext.NodeType.LEARNER, category=category, icon="icons/icon.png")	
+@knext.node(name="Supplychain visualization node", node_type=knext.NodeType.LEARNER, category=category, icon_path="icons/icon.png")	
 @knext.input_table(name="Input Data 1",description="Input data")
 @knext.output_table(name="Output Data",  description="Output data")
 @knext.output_view(name="Output view", description="Output view")
