@@ -22,9 +22,9 @@ class TemplateNode:
 
     def execute(self, exec_context, input_1):
         df = input_1.to_pandas() # Transform the input table to some processable format (pandas or pyarrow)
-        if df.empty:
-        LOGGER.warning("Input table is empty.")
-        return None, None  # Return None for both the table and the view
+    #    if df.empty:
+    #    LOGGER.warning("Input table is empty.")
+    #    return None, None  # Return None for both the table and the view
 
         df = df.rename(columns={'Country (from)': 'C_From', 'Country (to)': 'C_To', 'Value (thousands of €)' : 'Value' })
 
