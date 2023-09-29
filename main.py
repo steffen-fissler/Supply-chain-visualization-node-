@@ -95,7 +95,7 @@ class TemplateNode:
             c_th = row['Value_Normalized']
            
             # Introduce a delay between geocoding requests
-            time.sleep(1)  # Wait for a second before each geocoding request
+            time.sleep(0.2)  # Wait for a second before each geocoding request
     
             nacrtaj_arrow(fig, countries, c_from, c_to, c_th)
 
