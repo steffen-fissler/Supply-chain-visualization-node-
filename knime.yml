@@ -2,7 +2,7 @@ name: Supply_chain_visualization # Will be concatenated with the group_id to an 
 author: Luka Filipovic, Octavio Mesa-Varona, Lars Valentin
 env_yml_path: env.yml # This is necessary for bundling, but not needed during development
 extension_module: main # The .py Python module containing the nodes of your extension
-description: supply_chain_visualization # Human readable bundle name / description
+description: Visualization for supply chains # Human readable bundle name / description
 long_description: This extension enables the visualization of supply chains.
 group_id: BfR_UDG.FoodDecide
 version: 0.1.0 # Version of this Python node extension
