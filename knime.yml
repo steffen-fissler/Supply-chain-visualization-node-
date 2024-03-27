@@ -3,7 +3,7 @@ author: Luka Filipovic, Octavio Mesa-Varona, Lars Valentin
 env_yml_path: env.yml # This is necessary for bundling, but not needed during development
 extension_module: main # The .py Python module containing the nodes of your extension
 description: Visualization for supply chains # Human readable bundle name / description
-long_description: This extension enables the visualization of supply chains.
+long_description: This extension enables the visualization of supply chain data on a choropleth map using Plotly and geospatial data. It takes an input table with supply chain information and creates an interactive map displaying the flow of goods between countries.
 group_id: BfR_UDG.FoodDecide
 version: 0.1.0 # Version of this Python node extension
 vendor: BfR (Germany) and UDG (Montenegro)
