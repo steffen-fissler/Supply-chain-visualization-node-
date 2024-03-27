@@ -17,6 +17,17 @@ category = knext.category("/community", "Supply_chain_visualization_node", "Supp
 @knext.output_view(name="Output view", description="Output view")
 
 class TemplateNode:
+    """Visualize supply chain data.
+    
+This is a custom node for KNIME designed to visualize supply chain data on a choropleth map using Plotly and geospatial data. It takes an input table with supply chain information and creates an interactive map displaying the flow of goods between countries.
+
+Features
+- Input supply chain data with columns for origin, destination, and value.
+- Visualization of the supply chain on an interactive choropleth map.
+- Custom color-coding of countries to distinguish them.
+- Arrow visualization to represent the flow of goods.
+- Integration with geospatial data to obtain latitude and longitude coordinates of countries.
+    """
     def configure(self, configure_context, input_schema_1):
         return input_schema_1
 
